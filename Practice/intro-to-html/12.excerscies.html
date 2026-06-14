@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12-excersise</title>
+
+    <style>
+        .box {
+            display: flex;
+            flex-direction: row;
+            width: 250px;
+            margin: 20px;
+            border-color: rgb(182, 179, 179);
+            border-style: solid;
+            border-width: 1px;
+            border-radius: 5px;
+
+        }
+
+        .text {
+            width: 150px;
+            margin: 5px;
+        }
+
+        .button {
+            margin: 5px;
+        }
+
+        .notification {
+
+            background-color: rgb(64, 64, 228);
+            margin: 5px;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            margin-top: 8px;
+
+        }
+
+        .text1 {
+            margin: 10px;
+
+        }
+
+        .template {
+            display: flex;
+            flex-direction: row;
+            width: 500px;
+        }
+
+        .oliver {
+            width: 100px;
+        }
+
+        .ppf {
+            width: 80%;
+            border-radius: 500px;
+        }
+
+        .details {
+            width: 200px;
+        }
+
+        .name,
+        .type,
+        .pop {
+            margin-top: 0;
+            margin-bottom: 5px;
+        }
+
+        .name {
+            font-weight: bold;
+        }
+
+        .follow {
+            width: 100px;
+            align-items: center;
+
+        }
+
+        .fol {
+            background-color: blue;
+            border: none;
+            color: white;
+            margin: 15px;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div style="display: flex; flex-direction: row;">
+        <div style="background-color: lightblue; width: 200px;">
+            200px
+        </div>
+        <div style="background-color: lightpink; width: 75px;">
+            75px
+        </div>
+    </div>
+
+    <div style="display: flex; flex-direction: row;">
+        <div style="background-color: lightblue;width: 50px;">
+            item1
+        </div>
+        <div style="background-color: lightpink;flex: 1;">
+            item2
+        </div>
+        <div style="background-color: lightblue;width: 75px;"></div>
+    </div>
+
+    <div style="display: flex;flex-direction: row; justify-content: space-between;">
+        <div style="background-color: lightpink;">
+            item1
+        </div>
+        <div style="background-color: lightpink;">
+            item2
+        </div>
+        <div style="background-color: lightpink;">
+            item3
+        </div>
+        <div style="background-color: lightpink;">
+            item4
+        </div>
+    </div>
+
+    <div style="
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    border-color: gray;
+    border-width: 1px;
+    border-style: solid;
+    height: 50px;
+    align-items: center;">
+        <div style="background-color: lightpink;">
+            item1
+        </div>
+        <div style="background-color: lightpink;">
+            item2
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="text">
+            <div class="text1">home</div>
+            <div class="text1">notification</div>
+            <div class="text1">message</div>
+        </div>
+        <div class="button">
+            <div><button class="notification">14</button></div>
+            <div><button class="notification">4</button></div>
+            <div><button class="notification">1</button></div>
+        </div>
+    </div>
+
+    <div class="template">
+        <div class="oliver">
+            <img class="ppf" src="images.jpeg" alt="">
+        </div>
+        <div class="details">
+            <p class="name">oliver</p>
+            <p class="type">the cat </p>
+            <p class="pop">popular</p>
+        </div>
+        <div class="follow">
+            <button class="fol">follow</button>
+        </div>
+    </div>
+
+    <div class="template">
+        <div class="oliver">
+            <img class="ppf" src="images.jpeg" alt="">
+        </div>
+        <div class="details">
+            <p class="name">oliver</p>
+            <p class="type">the cat </p>
+            <p class="pop">popular</p>
+        </div>
+        <div class="follow">
+            <button class="fol">follow</button>
+        </div>
+    </div>
+
+    <div class="template">
+        <div class="oliver">
+            <img class="ppf" src="images.jpeg" alt="">
+        </div>
+        <div class="details">
+            <p class="name">oliver</p>
+            <p class="type">the cat </p>
+            <p class="pop">popular</p>
+        </div>
+        <div class="follow">
+            <button class="fol">follow</button>
+        </div>
+    </div>
+
+    <div style="display: flex;background-color: rgb(141, 26, 141);height: 50px;align-items: center;justify-content: space-between;">
+        <div style="color: white; margin-left: 10px;">
+            Home
+        </div>
+        <div class="middle-section">
+            <input style="padding-left :10px; padding-right:500px; text-align: left; border-radius: 18px; border: none; height: 30px;" type="text" placeholder="Search">
+        </div>
+        <div style="padding-right: 10px;">
+            <button style="background-color:rgb(141, 26, 141);color: white ; border-style: solid; border-color: white; padding: 10px 20px;">Download</button>
+        </div>
+    </div>
+
+
+
+
+
+
+</body>
+
+</html>

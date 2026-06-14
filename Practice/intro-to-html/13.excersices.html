@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>13-excersices</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        .flexbox {
+            width: 300px;
+            display: flex;
+            flex-direction: row;
+            height: 50px;
+            margin: 20px;
+        }
+
+        .column1 {
+            width: 100px;
+            background-color: lightpink;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .item1 {
+            background-color: black;
+            color: white;
+        }
+
+        .column2 {
+            width: 200px;
+            background-color: lightblue;
+        }
+
+        .row2 {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .row {
+            background-color: black;
+            color: white;
+        }
+
+        .flexbox1 {
+            width: 409px;
+            height: 130px;
+            display: flex;
+            flex-direction: column;
+            border-style: solid;
+            border-color: rgb(192, 192, 192);
+            border-width: 2px;
+            box-shadow: inset 1px 2px 5px rgba(o, 0, 0, 0.05);
+        }
+
+        .upper-section {
+            font-family: Roboto;
+            color: rgb(80, 79, 79);
+            margin: 10px;
+
+
+        }
+
+        .lower-section {
+            display: flex;
+            flex-direction: row;
+
+        }
+
+        .pfp {
+            width: 50px;
+            border-radius: 50px;
+            margin: 10px;
+            display: flex;
+            align-items: center;
+
+        }
+
+        .info {
+            margin: 10px;
+        }
+
+        .infor {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .info1 {
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .info2 {
+            font-weight: bold;
+        }
+
+        .time {
+            color: rgb(80, 79, 79);
+        }
+
+        .flexbox2 {
+            width: 409px;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            border-style: solid;
+            border-color: rgb(192, 192, 192);
+            border-width: 2px;
+            box-shadow: inset 1px 2px 5px rgba(o, 0, 0, 0.05);
+            margin: 30px;
+        }
+        .flexbox3{
+            display:flex;
+            width:400px ; 
+            border-style: solid;
+            border-color: rgb(192, 192, 192);
+            border-width: 2px;
+            box-shadow: inset 1px 2px 5px rgba(o, 0, 0, 0.05);
+            margin: 30px;
+        }
+        .img{
+            width: 50px;
+            border-radius: 50px;
+            margin: 10px;
+            display: flex;
+            align-items: center;
+
+        }
+        .box2{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+            line-height: 5px;
+
+        }
+        .box3{
+            width: 300px;
+            height: 60px;
+            display: flex;
+            flex-direction: row;
+            border-style: solid;
+            border-color: rgb(192, 192, 192);
+            border-width: 2px;
+            border-radius: 9px;
+
+        }
+        .empty{
+            width:  70px;
+            background-color: rgb(199, 195, 195);
+        }
+        .com{
+            margin-left: 5px;
+            line-height: 5px;
+        }
+        .s1{
+            font-weight: bold;
+        }
+        .s2{
+            font-weight: none;
+            color:rgb(91, 88, 88); ;
+        }
+
+
+        
+    
+    </style>
+</head>
+
+<body>
+    <div class="flexbox">
+        <div class="column1">
+            <div class="item1">item1</div>
+        </div>
+        <div class="column2"></div>
+    </div>
+
+    <div class="flexbox">
+        <div class="column1"></div>
+        <div class="column2">
+            <div class="row1"> row1</div>
+            <div class="row2">
+                <div class="row">row2</div>
+                <div class="row">row2</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="flexbox1">
+        <div class="upper-section">All INBOX </div>
+        <div class="lower-section">
+            <div class="image">
+                <img class="pfp" src="images.jpeg" alt="">
+            </div>
+            <div class="info">
+                <div class="infor">
+                    <div class="info1">chewy promotions</div>
+                    <div class="time"> 4:58PM</div>
+                </div>
+                <div class="info2">biggest sales of the year!</div>
+                <div>hey there! we're writing to tell you about our...</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="flexbox2">
+        <div>
+            <div class="upper-section">All INBOX </div>
+            <div class="lower-section">
+                <div class="image">
+                    <img class="pfp" src="images.jpeg" alt="">
+                </div>
+                <div class="info">
+                    <div class="infor">
+                        <div class="info1">chewy promotions</div>
+                        <div class="time"> 4:58PM</div>
+                    </div>
+                    <div class="info2">biggest sales of the year!</div>
+                    <div>hey there! we're writing to tell you about our...</div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+          
+            <div class="lower-section">
+                <div class="image">
+                    <img class="pfp" src="images.jpeg" alt="">
+                </div>
+                <div class="info">
+                    <div class="infor">
+                        <div class="info1">chewy promotions</div>
+                        <div class="time"> 4:58PM</div>
+                    </div>
+                    <div class="info2">biggest sales of the year!</div>
+                    <div>hey there! we're writing to tell you about our...</div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            
+            <div class="lower-section">
+                <div class="image">
+                    <img class="pfp" src="images.jpeg" alt="">
+                </div>
+                <div class="info">
+                    <div class="infor">
+                        <div class="info1">chewy promotions</div>
+                        <div class="time"> 4:58PM</div>
+                    </div>
+                    <div class="info2">biggest sales of the year!</div>
+                    <div>hey there! we're writing to tell you about our...</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="flexbox3">
+        <div class="box1">
+            <img class="img" src="images.jpeg" alt="">
+        </div>
+        <div class="box2">
+            <div>
+                <p class="s1">Supersimple.dev <span class="s2"> @supersimpledev</span></p>
+                <p>What is backend web development? a complete </p>
+                <p>overview.New video is up</p>
+            </div>
+            <div class="box3">
+                <div class="empty"></div>
+                <div class="com">
+                    <p class="s2">youtube.com</p>
+                    <p>backend web dev video</p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flexbox1 {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            margin-top: 20px;
+            gap: 5px;
+            width: max-content;
+        }
+
+        .flexbox2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            margin-top: 10px;
+            gap: 5px;
+            width: max-content;
+        }
+    </style>
+</head>
+
+<body>
+
+    <script>
+        let calculation = '';  // Define calculation at the top
+
+    </script>
+
+
+    <div class="flexbox">
+        <div class="flexbox1">
+            <div class="grid-item">
+                <button onclick="
+            calculation += '1'; // string
+            console.log(`Calculation = ${calculation}`);">
+                    1
+                </button>
+            </div>
+            <div class="grid-item">
+                <button onclick="
+            calculation += '2'; // string
+            console.log(`Calculation = ${calculation}`);">
+                    2
+                </button>
+            </div>
+            <div class="grid-item">
+                <button onclick="
+            calculation += '3'; // string
+            console.log(`Calculation = ${calculation}`);">
+                    3
+                </button>
+            </div>
+            <div class="grid-item">
+                <button onclick="
+                calculation += ' + '; // string
+                console.log(`Calculation = ${calculation}`);">
+                    +
+                </button>
+            </div>
+            <div class="grid-item">
+                <button onclick="
+                calculation += '4'; // string
+                console.log(`Calculation = ${calculation}`);">
+                    4
+                </button>
+            </div>
+            <div class="grid-item">
+                <button onclick="
+                calculation += '5'; // string
+                console.log(`Calculation = ${calculation}`);">
+                    5
+                </button>
+            </div>
+            <div class="grid-item">
+                <button onclick="
+                 calculation += '6'; // string
+                 console.log(`Calculation = ${calculation}`);">
+                    6
+                </button>
+            </div>
+            <div class="grid-item">
+                <button onclick="
+                calculation += ' - '; // string
+                console.log(`Calculation = ${calculation}`);">
+                    -
+                </button>
+            </div>
+            <div class="grid-item">
+                <button onclick="
+                calculation += '7'; // string
+                console.log(`Calculation = ${calculation}`);">
+                    7
+                </button>
+            </div>
+            <div class="grid-item">
+                <button onclick="
+                calculation += '8'; // string
+                console.log(`Calculation = ${calculation}`);">
+                    8
+                </button>
+            </div>
+            <div class="grid-item">
+                <button onclick="
+                calculation += '9'; // string
+                console.log(`Calculation = ${calculation}`);">
+                    9
+                </button>
+            </div>
+            <div class="grid-item">
+                <button onclick="
+                calculation += ' * '; // string
+                console.log(`Calculation = ${calculation}`);">
+                    *
+                </button>
+            </div>
+            <div class="grid-item">
+                <button onclick="
+                calculation += ' 0 '; // string
+             console.log(`Calculation = ${calculation}`);">
+                    0
+                </button>
+            </div>
+            <div class="grid-item">
+                <button onclick="
+                calculation += '.';
+                console.log(`Calculation = ${calculation}`);"">
+                .
+        </button>
+        </div>
+            <div class=" grid-item">
+                    <button // Note: eval() takes a string and runs it as code. // Avoid using eval() in real world
+                        projects since // it can potentially be given harmful code to run. // Only use eval() for
+                        learning purposes or in a controlled environment. onclick="
+              calculation = eval(calculation);
+              console.log(`Calculation = ${calculation}`);">
+                        =
+                    </button>
+            </div>
+            <div class="grid-item">
+                <button onclick="
+        calculation += ' / ';
+        console.log(`Calculation = ${calculation}`);">
+                    /
+                </button>
+            </div>
+        </div>
+        <div class="flexbox2">
+             <button onclick="
+                calculation = '';
+                console.log(`Calculation cleared`);">
+                    Clear
+                </button>
+        </div>
+    </div>
+
+
+
+
+
+</body>
+
+</html>

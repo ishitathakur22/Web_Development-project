@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+
+     <!-- algorithum of the project -->
+    <!-- 1.comp randomly selects a move -->
+     <!-- 2.compare the moves to get the result -->
+    <!-- 3.display the result in a popup-->
+
+<!-- random work here -->
+
+<!--   0            1/3         2/3          1                  
+       |-------------|------------|-----------|
+       0           0.33          0.66        1
+
+       if b\ween 0 and 0.33 then rock
+       if b\ween 0.33 and 0.66 then paper
+       if b\ween 0.66 and 1 then scissors
+-->
+
+    <p>Rock Paper Scissors</p>
+
+    <!-- Button for selecting Rock -->
+    <button onclick="
+        // Generate a random number between 0 and 1
+        let randomNumber = Math.random(); 
+
+        // Declare a variable to store the computer's move
+        let computerMove;
+
+        // Assign a move based on the random number
+        if (randomNumber < 1/3) {
+            computerMove = 'rock'; // Rock if random number is between 0 and 1/3
+        } else if (randomNumber < 2/3) {
+            computerMove = 'paper'; // Paper if random number is between 1/3 and 2/3
+        } else {
+            computerMove = 'scissors'; // Scissors if random number is between 2/3 and 1
+        }
+
+        // Declare a variable to store the result
+        let result = '';
+
+        // Compare player's move (Rock) with the computer's move
+        if (computerMove === 'rock') {
+            result = 'Tie'; // Both chose Rock, it's a tie
+        } else if (computerMove === 'paper') {
+            result = 'You lose'; // Paper beats Rock, you lose
+        } else {
+            result = 'You win'; // Rock beats Scissors, you win
+        }
+
+        // Display the result in an alert popup
+        alert(`Computer move is ${computerMove}. Your move is Rock. Result: ${result}`);
+        // this will alert the computer move and the result
+            /// now we will display the result in a popup
+            // or u could have used 
+            /* alert(youu picked rock. computer picked $(computermoves). so the result is $(result))*/
+    ">Rock</button>
+
+    <!-- Button for selecting Paper -->
+    <button onclick="
+        // Generate a random number between 0 and 1
+        let randomNumber = Math.random(); 
+
+        // Declare a variable to store the computer's move
+        let computerMove;
+
+        // Assign a move based on the random number
+        if (randomNumber < 1/3) {
+            computerMove = 'rock'; // Rock if random number is between 0 and 1/3
+        } else if (randomNumber < 2/3) {
+            computerMove = 'paper'; // Paper if random number is between 1/3 and 2/3
+        } else {
+            computerMove = 'scissors'; // Scissors if random number is between 2/3 and 1
+        }
+
+        // Declare a variable to store the result
+        let result = '';
+
+        // Compare player's move (Paper) with the computer's move
+        if (computerMove === 'rock') {
+            result = 'You win'; // Paper beats Rock, you win
+        } else if (computerMove === 'paper') {
+            result = 'Tie'; // Both chose Paper, it's a tie
+        } else {
+            result = 'You lose'; // Scissors beats Paper, you lose
+        }
+
+        // Display the result in an alert popup
+        alert(`Computer move is ${computerMove}. Your move is Paper. Result: ${result}`);
+       
+    ">Paper</button>
+
+    <!-- Button for selecting Scissors -->
+    <button onclick="
+        // Generate a random number between 0 and 1
+        let randomNumber = Math.random(); 
+
+        // Declare a variable to store the computer's move
+        let computerMove;
+
+        // Assign a move based on the random number
+        if (randomNumber < 1/3) {
+            computerMove = 'rock'; // Rock if random number is between 0 and 1/3
+        } else if (randomNumber < 2/3) {
+            computerMove = 'paper'; // Paper if random number is between 1/3 and 2/3
+        } else {
+            computerMove = 'scissors'; // Scissors if random number is between 2/3 and 1
+        }
+
+        // Declare a variable to store the result
+        let result = '';
+
+        // Compare player's move (Scissors) with the computer's move
+        if (computerMove === 'rock') {
+            result = 'You lose'; // Rock beats Scissors, you lose
+        } else if (computerMove === 'paper') {
+            result = 'You win'; // Scissors beats Paper, you win
+        } else {
+            result = 'Tie'; // Both chose Scissors, it's a tie
+        }
+
+        // Display the result in an alert popup
+        alert(`Computer move is ${computerMove}. Your move is Scissors. Result: ${result}`);
+    ">Scissors</button>
+
+</body>
+</html>

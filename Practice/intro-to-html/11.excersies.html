@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11-excercise</title>
+    <style>
+        .template {
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: 160px 160px 160px;
+            column-gap: 35px;
+
+        }
+
+        .video-preview {
+            box-shadow: 2px 2px 12px 2px gray;
+        }
+
+        .image {
+            width: 160px;
+        }
+
+        .profile-tittle {
+            display: grid;
+            grid-template-columns: 60px 1fr;
+
+        }
+
+        .image1 {
+            width: 50px;
+            border-radius: 50px;
+        }
+
+        .button {
+            margin-bottom: 10px;
+        }
+
+        .friends {
+            background-color: blue;
+            color: white;
+            font-size: bold;
+            text-align: center;
+            border: none;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="
+        display: grid;
+        grid-template-columns: 200px 75px;
+        margin-bottom: 20px;">
+        <div style="background-color: lightblue;">200px</div>
+        <div style="background-color: lightpink;">75px</div>
+    </div>
+
+    <div style="
+    display:grid;
+    grid-template-columns: 50px 1fr 75px;">
+        <div style="background-color: lightblue;">col 1</div>
+        <div style="background-color: lightpink;">col 2</div>
+        <div style="background-color: lightblue;">col 3</div>
+    </div>
+
+    <div
+        style="display: grid; grid-template-columns: 50px 50px 50px 50px;row-gap: 10px; column-gap: 20px; margin-top: 20px; ">
+        <div style="background-color: lightpink;">col 1</div>
+        <div style="background-color: lightpink;">col 2</div>
+        <div style="background-color: lightpink;">col 3</div>
+        <div style="background-color: lightpink;">col 4</div>
+        <div style="background-color: lightpink;">col 5</div>
+        <div style="background-color: lightpink;">col 6</div>
+        <div style="background-color: lightpink;">col 7</div>
+        <div style="background-color: lightpink;">col 8</div>
+    </div>
+
+    <div class="template">
+        <div class="video-preview">
+            <div class="post"><img class="image" src="images.jpeg" alt=""></div>
+            <div class="profile-tittle">
+                <div class="profile-pic"><img class="image1" src="images.jpeg" alt=""></div>
+                <div>
+                    <p>2 mutual friend</p>
+                </div>
+            </div>
+            <div class="button"><button class="friends">Add Friends</button></div>
+        </div>
+
+        <div class="video-preview">
+            <div class="post"><img class="image" src="images.jpeg" alt=""></div>
+            <div class="profile-tittle">
+                <div class="profile-pic"><img class="image1" src="images.jpeg" alt=""></div>
+                <div>
+                    <p>2 mutual friend</p>
+                </div>
+            </div>
+            <div class="button"><button class="friends">Add Friends</button></div>
+        </div>
+        <div class="video-preview">
+            <div class="post"><img class="image" src="images.jpeg" alt=""></div>
+            <div class="profile-tittle">
+                <div class="profile-pic"><img class="image1" src="images.jpeg" alt=""></div>
+                <div>
+                    <p>2 mutual friend</p>
+                </div>
+            </div>
+            <div class="button"><button class="friends">Add Friends</button></div>
+        </div>
+    </div>
+
+</body>
+
+</html>

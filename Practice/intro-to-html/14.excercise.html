@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>14-excerise</title>
+
+    <style>
+        .overlay {
+            display: flex;
+            background-color: rgba(0, 0, 0, 0.5);
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            justify-content: center;
+            align-items: center;
+        }
+        .modal {
+            background-color: white;
+            width: 300px;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        .modal-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .modal-content {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+    </style>
+</head>
+
+<body style="
+height: 3000px;
+
+    ">
+    <div class="bottom-right" style="
+    position: fixed;
+    background-color: black;
+    color: white;
+    bottom: 20px;
+    right: 20px;
+    ">bottom-right
+    </div>
+
+
+    <div style="
+    color: white;
+    background-color: green;
+    position: fixed;
+    width: 100px;
+    height: 3000px;
+    right: 0;
+  top: 0;
+  bottom: 0;
+    "> right sidebar
+    </div>
+
+    <div class="overlay">
+        <div class="modal">
+            <div class="modal-title">
+                Modal Title
+            </div>
+            <div class="modal-content">
+                This is a modal
+            </div>
+            <button>
+                Close
+            </button>
+        </div>
+    </div>
+
+</body>
+
+</html>

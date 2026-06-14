@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cart-quantity</title>
+</head>
+
+<body>
+    <button onclick="
+        console.log(`Cart Quantity = ${cartquantity} `);">
+        Show Quantity
+    </button>
+
+    <button onclick=" 
+      // cartquantity = cartquantity + 1; 
+        // cartquantity += 1;
+        cartquantity ++ ; // increment by 1
+        console.log(`Cart Quantity = ${cartquantity} `);">
+        Add to Cart
+    </button>
+
+    <button onclick="
+    cartquantity += 2;
+    console.log(`Cart Quantity = ${cartquantity} `);">
+        +2
+    </button>
+
+    <button onclick="
+    cartquantity += 3; 
+    console.log(`Cart Quantity = ${cartquantity} `);">
+        +3
+    </button>
+
+    <button onclick="
+    cartquantity = 0;
+    console.log('Cart Quantity was reset');
+    console.log(`Cart Quantity = ${cartquantity} `)" ; " >Reset Cart</button>
+
+
+    <script>
+        let cartquantity = 0; // number
+
+        let variable1 = 5; // number
+        console.log(variable1);// 5
+
+        const calculation = 2+2; // number
+        console.log(calculation); // 4
+        console.log(calculation + 2); // 6
+
+        const result = calculation + variable1; // number
+        console.log(result); // 9   
+
+        const message = 'hello'; // string
+        console.log(message); // hello 
+
+        variable1=5;
+        console.log(variable1); // 5
+
+        variable1 = variable1 + 1; // number
+        console.log(variable1); // 6
+
+        const variable2 = 5; // number
+
+        var variable3 = 4; // number
+
+        console.log(typeof variable2); // 4
+        console.log(typeof variable3); // 4
+        console.log(typeof variable1); // 4
+        console.log(typeof message); // string
+        
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>booleans</title>
+</head>
+<body>
+   <script>
+    true; // true
+    false; // false
+
+
+    // boolean value can be used in conditional statements
+    console.log (3<5); // true
+    console.log (3>5); // false
+    console.log (3=='3.00'); // true (loose equality)
+    console.log (3=== '3.00'); // false (strict equality)
+    console.log (3<5-5); // false (3<0) solves logical ooperation first the  comparion operator, priority of logical is more than comparion operator
+
+    if (true) {
+        console.log('This will always run'); // This will always run
+    } 
+    if (false) {
+        console.log('This will never run');
+    }
+
+    if (true ) {
+        console.log('This will always  run');
+    } else {
+        console.log('This will never run');
+    }
+
+    if (30>=16){
+        console.log('you can drive'); // you can drive
+    } else {
+        console.log('you cannot drive'); // you cannot drive
+    }
+
+    if (30>=16){
+        console.log('you can drive'); // you can drive
+    } else if (15>=14){
+        console.log('almost there!'); // you can drive
+    } else {
+        console.log('you cannot drive'); // you cannot drive
+    }
+
+
+    const age=15;
+    if (age>=16){
+        console.log('you can drive'); // you can drive
+    } else if (age>=14){
+        console.log('almost there!'); // almost there!
+    } else {
+        console.log('you cannot drive'); // you cannot drive
+    }
+      
+    // Boolean values can be used in logical operations
+    true && false; // false     
+    true || false; // true
+    !true; // false 
+    !false; // true
+
+    console.log(3<5 && 5>2); // true (both conditions are true)
+    console.log(3<5 && 5>2/1); // true (both conditions are true) logical operator has more priority than comparion operator
+    
+    console.log(true || false); // true (at least one condition is true)
+    console.log(!true); // false (negation of true)
+    console.log(!false); // true (negation of false)
+
+
+   // truthy and falsy values
+
+    if (5){
+        console.log('truthy value'); // truthy value (5 is a non-zero number)
+    }
+
+    if (0){
+        console.log('falsy value'); // falsy value (0 is a falsy value)
+    }
+    if (''){
+        console.log('falsy value'); // falsy value (empty string is a falsy value)
+    }
+    if ('hello'){
+        console.log('truthy value'); // truthy value (non-empty string is a truthy value)
+    }
+    if (null){
+        console.log('falsy value'); // falsy value (null is a falsy value)
+    }
+    if (undefined){
+        console.log('falsy value'); // falsy value (undefined is a falsy value)
+    }
+    if (NaN){
+        console.log('falsy value'); // falsy value (NaN is a falsy value)
+    }
+    
+    const cartQuantity = 5;
+    if ( cartQuantity > 0) {
+        console.log('You have items in your cart'); // You have items in your cart
+    }
+    if ( cartQuantity) {
+        console.log('You have items in your cart'); // You have items in your cart
+    }
+    if ( cartQuantity == 0) {
+        console.log('You have no items in your cart'); // You have no items in your cart
+    }
+    console.log(!0); // true (negation of 0)
+    console.log(!5); // false (negation of 5)
+
+    console.log ('text'/ 5); // NaN (not a number)
+    console.log ('text' == 5); // false (string is not equal to number)
+    console.log ('text' === 5); // false (strict equality, different types)
+    console.log ('text' == 'text'); // true (both strings are equal)
+    console.log ('text' === 'text'); // true (strict equality, same type and value)
+    console.log ('text' != 'text'); // false (not equal)
+    console.log ('text' !== 'text'); // false (strict not equal, same type and value)
+    console.log ('text' != 5); // true (not equal, different types)
+    console.log ('text' !== 5); // true (strict not equal, different types)
+    let variable1 = undefined;
+    console.log(variable1); // undefined (variable is declared but not assigned a value)
+    console.log(variable1 == null); // true (loose equality, null and undefined are equal)  
+    console.log(variable1 === null); // false (strict equality, different types)
+
+    // Ternary operator (conditional operator)
+    // Syntax: condition ? expressionIfTrue : expressionIfFalse
+    // this is shorter way to write if-else statements 
+    true ? 'truthy' : 'fasly'; // 'truthy' (true is truthy)
+     /* think of this as         if (true) {
+                                   'truthy' 
+                                   } else {
+                                     'falsy' 
+                                    } 
+    */
+    false ? 'truthy' : 'fasly'; // 'falsy' (false is falsy)
+
+
+    const result= true? 'truthy' : 'falsy'; // 'truthy' (true is truthy)
+    console.log(result); // 'truthy' (result is assigned the value 'truthy')
+
+    const result= 0 ? 'truthy' : 'falsy';// 'falsy' (0 is falsy)
+    console.log(result); // 'falsy' (result is assigned the value 'falsy')
+
+    // Logical AND (&&) and OR (||) operators
+    // Logical AND (&&) returns true if both operands are true
+    // Logical OR (||) returns true if at least one operand is true
+    // Logical NOT (!) negates the boolean value
+    
+    // && (AND) operator: returns true if both operands are true
+    // || (OR) operator: returns true if at least one operand is true
+    // ! (NOT) operator: negates the boolean value
+
+    // Example of AND operator
+    //guard operators &&
+
+    false && console.log('This will never run'); // This will never run (false && anything is false)
+    true && console.log('This will always run'); // This will always run (true && anything is true)
+
+
+    const message = false && 'This will never run'; // message is false (false && anything is false)
+    console.log(message); // false (message is false)
+
+    const message = 5 && 'This will always run'; // message is 'This will always run' (5 is truthy, so the second operand is returned)
+    console.log(message); // 'This will always run' (message is 'This will always run')
+
+    //defualt operators ||
+    
+    const currencry = 'EUR' || 'USD' ;// currencry is 'EUR' (first operand is returned because it's truthy)
+    console.log(currencry); // 'EUR' (currencry is 'EUR')
+    const currencry = undefined || 'USD' ; // currencry is 'USD' (second operand is returned because the first operand is falsy)
+    console.log(currencry); //usd
+
+
+   </script>
+</body>
+</html>
